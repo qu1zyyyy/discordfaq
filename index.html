@@ -228,22 +228,23 @@
 
   .step-list { list-style: none; }
   .step-list li {
-    display: flex;
-    gap: 12px;
-    padding: 0.65rem 0;
+    display: block;
+    padding: 0.65rem 0 0.65rem 1.4rem;
     border-bottom: 1px solid var(--border);
     font-size: 14.5px;
     color: rgba(240,238,255,0.8);
-    line-height: 1.65;
-    align-items: flex-start;
+    line-height: 1.75;
+    position: relative;
+    word-break: break-word;
   }
   .step-list li:last-child { border-bottom: none; }
   .step-list li::before {
     content: '→';
     color: var(--accent);
     font-size: 14px;
-    margin-top: 2px;
-    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
   }
 
   code {
@@ -368,6 +369,7 @@
     .tab-btn { min-width: 110px; padding: 13px 14px; }
     .tab-emoji { font-size: 1.7rem; }
   }
+
 </style>
 </head>
 <body>
